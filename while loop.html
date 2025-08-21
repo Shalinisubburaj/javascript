@@ -1,0 +1,40 @@
+<!Doctype html>
+<html>
+<head>
+<title> While </title>
+</head>
+<body>
+<h1 id="head"> While Loop </h1>
+<script>
+let i=100;
+while(i>=10)
+{
+document.write("<h1 style='color:brown;'>" + i +"<br>" + "</h1>");
+i-=10;
+}
+
+let h=document.getElementById("head");
+h.style.backgroundColor="yellow";
+h.style.borderColor="blue";
+h.style.borderWidth="30px";
+h.style.borderStyle="inset";
+h.style.borderRadius="30px";
+h.style.textAlign="center";
+
+h.onmouseover=function()
+{
+this.style.backgroundColor="blue";
+this.style.borderColor="yellow";
+h.style.borderStyle="outset";
+}
+
+h.onmouseout=function()
+{
+this.style.backgroundColor="yellow";
+this.style.borderColor="blue";
+h.style.borderStyle="inset";
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!Doctype html>
+<html>
+<head>
+<title>if else</title>
+</head>
+<body>
+<script>
+function tam()
+{
+let tamil=parseFloat(prompt("Enter your tamil mark"));
+if(tamil>=35)
+{
+alert("Congrats!You are passed in tamil subject");
+}
+else
+{
+alert("Sorry to say!you are failed in tamil Subject");
+}
+}
+
+function eng()
+{
+let English=parseFloat(prompt("Enter your english mark"));
+if(English>=35)
+{
+alert("Congrats!You are passed in English subject");
+}
+else
+{
+alert("Sorry to say!you are failed in English Subject");
+}
+}
+
+function math()
+{
+let maths=parseFloat(prompt("Enter your Maths mark"));
+if(maths>=35)
+{
+alert("Congrats!You are passed in maths subject");
+}
+else
+{
+alert("Sorry to say!you are failed in maths Subject");
+}
+}
+
+function sci()
+{
+let science=parseFloat(prompt("Enter your science mark"));
+if(science>=35)
+{
+alert("Congrats!You are passed in science subject");
+}
+else
+{
+alert("Sorry to say!you are failed in science Subject");
+}
+}
+
+
+function evs()
+{
+let Evs=parseFloat(prompt("Enter your evs mark"));
+if(Evs>=35)
+{
+alert("Congrats!You are passed in evs subject");
+}
+else
+{
+alert("Sorry to say!you are failed in evs Subject");
+}
+}
+
+function tot(){
+let total=tamil+english+maths+science+Evs;
+alert("your total mark is : ",+total);
+}
+
+
+
+
+</script>
+
+<button class="one" onclick="tam()">Tamil</button>
+<button class="two" onclick="eng()">English </button>
+<button class="three" onclick="math()">Mathemetics</button>
+<button class="four" onclick="sci()">Science </button>
+<button class="five" onclick="evs()">Environmental Science</button>
+<button class="six" onclick="tot()"> Total</button>
+
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,44 @@
+<!Doctype html>
+<html>
+<head>
+
+<title>switch case</title>
+</head>
+<body>
+<script>
+let operator=prompt("enter any arithmetic operator");
+let a=parseFloat(prompt("Enter a value"));
+let b=parseFloat(prompt("Enter b value"));
+
+
+switch(operator)
+{
+case "add":
+document.write("<h1 style='color:red;'>Addition result : </h1>",a + b); 
+break;
+
+case "sub":
+document.write("<h1 style='color:green;'>Subtraction result : </h1>",a - b); 
+break;
+
+case "mul":
+document.write("<h1 style='color:blue;'>Multiplication result : </h1>",a * b); 
+break;
+
+case "div":
+document.write("<h1 style='color:red;'>Division result : </h1>",a / b); 
+break;
+
+case "mod":
+document.write("<h1 style='color:purple;'>Modulo result : </h1>",a % b); 
+break;
+
+default:
+alert("Enter a valid data of arithmetic operations");
+
+}
+
+</script>
+</body>
+
+</html>

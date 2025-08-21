@@ -1,0 +1,13 @@
+<!Doctype html>
+<html>
+<head>
+<title>Arrays </title>
+</head>
+<body>
+<script>
+let skills=["Html","CSS","JS"];
+document.write(skills);
+</script>
+</body>
+
+</html>

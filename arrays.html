@@ -1,0 +1,42 @@
+<!Doctype html>
+<html>
+<head>
+<title>Arrays </title>
+</head>
+<body>
+<script>
+let mat,i,j;
+let skills=["Html","CSS","JS"];
+document.write(skills);
+document.write(skills[2]);
+skills.push("Java");
+document.write("<h1 style='color:red;'>"+skills+"</h1>");
+skills.pop();
+document.write("<h1 style='color:green;'>"+skills+"</h1>");
+skills.unshift("python");
+document.write("<h1 style='color:purple;'>"+skills+"</h1>");
+skills.shift();
+document.write("<h1 style='color:yellow;'>"+skills+"</h1>");
+
+
+mat=[["a","b","c"],["d","e","f"],["g","h","i"]];
+document.write(mat[2][1] +"<br>");
+
+
+for(i=1;i<=3;i++)
+{
+for(j=1;j<=i;j++)
+{
+document.write("multiplication table" +i+ "X" +j+ "=" +i*j +"<br>");
+}
+
+}
+
+
+
+
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+.container
+{
+width:100%;
+height:100vh;
+background-color:violet;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+.calci
+{
+padding:10px;
+background-color:grey;
+border-color:blue;
+border-style:inset;
+border-width:30px;
+border-radius:50px;
+}
+.calci form input{
+width:60px;
+height:60px;
+border-radius:30px;
+margin:10px;
+background-color:purple;
+color:white;
+font-size:30px;
+}
+form .display{
+display:flex;
+justify-content:flex-end;
+}
+form .display input{
+text-align:right;
+flex:1;
+font-size:50px;
+}
+.on{
+background-color:red;
+}

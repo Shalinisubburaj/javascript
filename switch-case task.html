@@ -1,0 +1,133 @@
+<!Doctype html>
+<html>
+<head>
+<meta http-equiv="refresh"content="5">
+<title> Switch task </title>
+</head>
+<body>
+<script>
+let choice = parseFloat(prompt("Choose any arithmetic operation:\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n 5.Modulo\n 6.Exponentiation\n 7.Increament\n 8.Decrement"));
+
+function add()
+{
+alert("You choose Addition operator");
+let a=parseFloat(prompt("enter a value"));
+let b=parseFloat(prompt("enter b value"));
+let c= a+b;
+return c;
+}
+
+function sub()
+{
+alert("You choose Subtraction operator");
+let a=parseFloat(prompt("enter a value"));
+let b=parseFloat(prompt("enter b value"));
+let c= a-b;
+return c;
+}
+
+function mul()
+{
+alert("You choose Multiplication operator");
+let a=parseFloat(prompt("enter a value"));
+let b=parseFloat(prompt("enter b value"));
+let c= a*b;
+return c;
+}
+
+function div()
+{
+alert("You choose Division operator");
+let a=parseFloat(prompt("enter a value"));
+let b=parseFloat(prompt("enter b value"));
+let c= a/b;
+return c;
+}
+
+function mod()
+{
+alert("You choose Modulo operator");
+let a=parseFloat(prompt("enter a value"));
+let b=parseFloat(prompt("enter b value"));
+let c= a%b;
+return c;
+}
+
+function exp()
+{
+alert("You choose Exponentiation operator");
+let a=parseFloat(prompt("enter a value"));
+let b=parseFloat(prompt("enter b value"));
+let c= a**b;
+return c;
+}
+
+function inc()
+{
+alert("You choose Increament operator");
+let a=parseFloat(prompt("enter a value"));
+a++;
+let c= a;
+return c;
+}
+
+function dec()
+{
+alert("You choose Decrement operator");
+let a=parseFloat(prompt("enter a value"));
+a--;
+let c= a;
+return c;
+}
+
+
+
+
+
+
+
+switch(choice)
+{
+case 1:
+document.write ("Addition result: ",add());
+break;
+
+case 2:
+document.write ("Subtraction result: ",sub());
+break;
+
+case 3:
+document.write ("Multiplication result: ",mul());
+break;
+
+case 4:
+document.write ("Division result: ",div());
+break;
+
+case 5:
+document.write ("Modulo result: ",mod());
+break;
+
+case 6:
+document.write ("Exponentiation result: ",exp());
+break;
+
+case 7:
+document.write ("Increament result: ",inc());
+break;
+
+case 8:
+document.write ("Decreament result: ",dec());
+break;
+
+
+
+default:
+alert("enter a valid data");
+}
+
+
+
+</script>
+</body>
+</html>

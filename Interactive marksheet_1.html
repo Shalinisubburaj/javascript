@@ -1,0 +1,109 @@
+ <!Doctype html>
+ <head>
+ <title>Online Calculator</title>
+ <link rel="stylesheet" href="Interactive marksheet.css">
+ </head>
+ <body>
+ <h1> 🧮 Online Calculator 🧮 </h1>
+
+ <h2> Calculate Your Result!!!This is the web portal for calculating your percentage of marks and status of your result </h2>
+ <script>
+ let tam,eng,math,sci,evs;
+ function percentage()
+ {
+ let tam=tamil();
+ let eng=english();
+ let math=maths();
+ let sci=science();
+ let evs=Evs();
+ let total =tam + eng + math + sci + evs;
+ let per= total /5;
+ document.write("Total : ",total);
+ document.write("Percentage : ",per);
+ }
+
+ function tamil()
+ {
+ tam=parseFloat(prompt("Enter the tamil mark : "));
+ if(tam>=35)
+ {
+ document.write("you are passed in tamil: "+tam+" <br>");
+ }
+ else
+ {
+ document.write("you are failed in tamil: "+tam+" <br>");
+ }
+ return tam;
+ }
+
+ function english()
+ {
+ eng=parseFloat(prompt("Enter the english mark : "));
+ if(eng>=35)
+ {
+ document.write("you are passed in english: "+eng+" <br>");
+ }
+ else
+ {
+ document.write("you are failed in english: "+eng+" <br>");
+ }
+ return eng;
+ }
+
+ function maths()
+ {
+ math=parseFloat(prompt("Enter the maths mark : "));
+ if(math>=35)
+ {
+ document.write("you are passed in Maths: "+math+" <br>");
+ }
+ else
+ {
+ document.write("you are failed in Maths: "+math+" <br>");
+ }
+ return math;
+ }
+
+ function science()
+ {
+ sci=parseFloat(prompt("Enter the Science mark : "));
+ if(sci>=35)
+ {
+ document.write("you are passed in Science: "+sci+" <br>");
+ }
+ else
+ {
+ document.write("you are failed in Science: "+sci+" <br>");
+ }
+ return sci;
+ }
+
+ function Evs()
+ {
+ evs=parseFloat(prompt("Enter the EVS mark : "));
+ if(evs>=35)
+ {
+ document.write("you are passed in Evs: "+evs+" <br>");
+ }
+ else
+ {
+ document.write("you are failed in Evs: "+evs+" <br>");
+ }
+ return evs;
+ }
+
+
+
+ </script>
+<h3> calculate the percentage of your mark here👇 </h3>
+ <button class="one" onclick="percentage()">Percentage</button> 
+<h3> Calculate the pass/fail status of your mark here👇 </h3>
+ <button class="two" onclick="tamil()">Tamil</button>
+ <button class="three" onclick="english()">English</button>
+ <button class="four" onclick="maths()">Mathematics</button>
+ <button class="five" onclick="science()">Science</button>
+ <button class="six" onclick="Evs()">Environmental Science</button>
+
+
+</body>
+ </html>

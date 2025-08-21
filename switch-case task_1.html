@@ -1,0 +1,127 @@
+<!Doctype html>
+<html>
+<head>
+<meta http-equiv="refresh"content="5">
+<title> Switch task </title>
+</head>
+<body>
+<script>
+let choice = prompt("Choose any arithmetic operation(Eg:Enter from 1 to 4 & one to four) :\n(1). Add\n(2). Subtract\n(3). Multiply\n(4). Divide\n (one). Modulo\n (two). Exponentiation\n (three). Increament\n (four). Decrement");
+
+function add()
+{
+alert("You choose Addition operator");
+let a=parseFloat(prompt("enter a value"));
+let b=parseFloat(prompt("enter b value"));
+let c= a+b;
+return c;
+}
+
+function sub()
+{
+alert("You choose Subtraction operator");
+let a=parseFloat(prompt("enter a value"));
+let b=parseFloat(prompt("enter b value"));
+let c= a-b;
+return c;
+}
+
+function mul()
+{
+alert("You choose Multiplication operator");
+let a=parseFloat(prompt("enter a value"));
+let b=parseFloat(prompt("enter b value"));
+let c= a*b;
+return c;
+}
+
+function div()
+{
+alert("You choose Division operator");
+let a=parseFloat(prompt("enter a value"));
+let b=parseFloat(prompt("enter b value"));
+let c= a/b;
+return c;
+}
+
+function mod()
+{
+alert("You choose Modulo operator");
+let a=parseFloat(prompt("enter a value"));
+let b=parseFloat(prompt("enter b value"));
+let c= a%b;
+return c;
+}
+
+function exp()
+{
+alert("You choose Exponentiation operator");
+let a=parseFloat(prompt("enter a value"));
+let b=parseFloat(prompt("enter b value"));
+let c= a**b;
+return c;
+}
+
+function inc()
+{
+alert("You choose Increament operator");
+let a=parseFloat(prompt("enter a value"));
+a++;
+let c= a;
+return c;
+}
+
+function dec()
+{
+alert("You choose Decrement operator");
+let a=parseFloat(prompt("enter a value"));
+a--;
+let c= a;
+return c;
+}
+
+switch(choice)
+{
+case "1":
+document.write ("Addition result: ",add());
+break;
+
+case "2":
+document.write ("Subtraction result: ",sub());
+break;
+
+case "3":
+document.write ("Multiplication result: ",mul());
+break;
+
+case "4":
+document.write ("Division result: ",div());
+break;
+
+case "one":
+document.write ("Modulo result: ",mod());
+break;
+
+case "two":
+document.write ("Exponentiation result: ",exp());
+break;
+
+case "three":
+document.write ("Increament result: ",inc());
+break;
+
+case "four":
+document.write ("Decreament result: ",dec());
+break;
+
+
+
+default:
+alert("enter a valid data");
+}
+
+
+
+</script>
+</body>
+</html>

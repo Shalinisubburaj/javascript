@@ -1,0 +1,86 @@
+<!Doctype html>
+<html>
+<head>
+<title> getElementbyId </title>
+</head>
+<body>
+<div id="box">
+
+<h1 id="heading"> Form </h1>
+<form id="loginform">
+
+<table>
+<tr> 
+<td>Username: </td>
+<td><input type="text" id="name" required></td>
+</tr>
+
+<tr>
+<td>Gmail: </td>
+<td><input type="email" id="mail" required></td>
+</tr>
+
+<tr>
+<td>Password: </td>
+<td> <input type="password" id="password" required> </td>
+</tr>
+
+
+<tr>
+<td>
+<button id="btn" onclick="showalert()">Login</button>
+</td>
+</tr>
+</table>
+</form>
+</div>
+
+<script>
+
+function showalert()
+{
+alert("You are Successfully Login to our website");
+}
+
+document.getElementById("heading").innerHTML="LOGIN";
+document.getElementById("heading").style.textAlign="center";
+document.getElementById("heading").style.color="red";
+document.getElementById("heading").style.textDecoration="underline";
+
+
+let container=document.getElementById("box");
+container.style.width="350px";
+container.style.height="270px";
+container.style.backgroundColor="beige";
+container.style.borderStyle="outset";
+container.style.borderColor="purple";
+container.style.borderWidth="50px";
+container.style.borderRadius="10px";
+container.style.position="absolute";
+container.style.left="550px";
+container.style.top="150px";
+
+
+let f=document.getElementById("loginform");
+f.style.color="purple";
+f.style.position="absolute";
+f.style.left="50px";
+
+
+let but=document.getElementById("btn");
+but.style.padding="10px";
+but.style.backgroundColor="blue";
+but.style.color="white";
+but.style.borderRadius="5px";
+but.style.cursor="pointer";
+but.style.position="relative";
+but.style.left="100px";
+but.style.top="20px";
+
+</script>
+
+</body>
+</html>
+
+
+

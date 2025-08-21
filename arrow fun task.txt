@@ -1,0 +1,9 @@
+<!Doctype html>
+<html>
+<head>
+<title> arrow fun </title>
+</head>
+<body>
+<script src="arrow1.js"></script>
+</body>
+</html> 

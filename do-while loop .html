@@ -1,0 +1,45 @@
+<!Doctype html>
+<html>
+<head>
+<title> Do-While </title>
+</head>
+<body>
+<h1 id="head"> Do-While Loop </h1>
+<script>
+let i=100;
+do
+{
+document.write("<h1>"+i+"<br>");
+i-=10;
+}
+while(i>=10);
+
+let h=document.getElementById("head");
+h.style.backgroundColor="blue";
+h.style.borderColor="red";
+h.style.borderWidth="30px";
+h.style.borderStyle="inset";
+h.style.borderRadius="30px";
+h.style.textAlign="center";
+h.style.color="beige";
+
+h.onmouseover=function()
+{
+this.style.backgroundColor="yellow";
+this.style.borderColor="purple";
+this.style.color="black";
+h.style.borderStyle="outset";
+}
+
+h.onmouseout=function()
+{
+this.style.backgroundColor="blue";
+this.style.borderColor="red";
+this.style.color="white";
+h.style.borderStyle="inset";
+}
+
+
+</script>
+</body>
+</html>
