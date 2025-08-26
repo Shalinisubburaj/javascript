@@ -1,0 +1,21 @@
+<!Doctype html>
+<html>
+<head>
+<title>Local storage</title>
+</head>
+<body>
+<h1> Local Storage </h1>
+<h2 id="loc"> </h2>
+<p id="loc1"></p>
+<p id="loc2"></p>
+<script>
+localStorage.setItem("name","Shalini");
+localStorage.setItem("age","22y");
+localStorage.setItem("gender","Female");
+document.getElementById("loc").innerHTML=localStorage.getItem("name");
+document.getElementById("loc1").innerHTML=localStorage.getItem("age");
+document.getElementById("loc2").innerHTML=localStorage.getItem("gender");
+</script>
+
+</body>
+</html>

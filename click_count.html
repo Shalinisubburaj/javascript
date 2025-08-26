@@ -1,0 +1,27 @@
+<!Doctype html>
+<html>
+<head>
+<title>Click count</title>
+<meta http-equiv="refresh" content="1">
+</head>
+<body>
+<h1> Click Count </h1>
+<p id="demo"></p>
+<button onclick="counter()">clickme</button>
+<script>
+document.getElementById("demo").innerHTML=localStorage.clickcount;
+function counter()
+{
+if(localStorage.clickcount)
+{
+localStorage.clickcount=Number(localStorage.clickcount)+1;
+}
+else
+{
+localStorage.clickcount=1;
+}
+}
+</script>
+
+</body>
+</html>
