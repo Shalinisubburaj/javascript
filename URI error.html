@@ -1,0 +1,21 @@
+<!Doctype html>
+<html>
+<head>
+<title> URI Error </title>
+</head>
+<body>
+<h1> URI ERROR </h1>
+<div id="demo"></div>
+<script>
+try
+{
+decodeURI("%%%%%%");
+}
+catch(err)
+{
+document.getElementById("demo").innerHTML=err.name;
+}
+
+</script>
+</body>
+</html>

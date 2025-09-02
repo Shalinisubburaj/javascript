@@ -1,0 +1,28 @@
+<!Doctype html>
+<html>
+<head>
+<title> light on/off  </title>
+<style>
+body{
+text-align:center;
+}
+img{
+padding:30px;
+width:200px;
+height:300px;
+}
+</style>
+</head>
+<body>
+<h1> onclick the bulb it will lights on </h1>
+<img id="bulb"  src="https://www.w3schools.com/js/pic_bulboff.gif" >
+
+<script>
+let on=document.getElementById("bulb");
+on.onclick=function()
+{
+document.getElementById("bulb").src = "https://www.w3schools.com/js/pic_bulbon.gif";
+}
+</script>
+</body>
+</html>

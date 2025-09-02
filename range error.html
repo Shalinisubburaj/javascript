@@ -1,0 +1,22 @@
+<!Doctype html>
+<html>
+<head>
+<title> Range Error </title>
+</head>
+<body>
+<h1> RANGE ERROR </h1>
+<div id="demo"></div>
+<script>
+let n=1;
+try
+{
+n.toPrecision(500);
+}
+catch(err)
+{
+document.getElementById("demo").innerHTML=err.name;
+}
+
+</script>
+</body>
+</html>
