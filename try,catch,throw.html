@@ -1,0 +1,36 @@
+<!Doctype html>
+<html>
+<head>
+<title> try & catch & throw </title>
+</head>
+<body>
+<h1> Error Handling </h1>
+<p> Try ,Catch & Throw </p>
+<p id="demo1"></p>
+<input type="text"  id="demo2">
+<button onclick="tester()">Text the Input </button>
+<script>
+function tester()
+{
+let m=document.getElementById("demo1");
+m.innerHTML="";
+let n=document.getElementById("demo2").value;
+try
+{
+if(n.trim()=="")throw "empty";
+if(isNaN(n)) throw "not a number";
+n=Number(n);
+if(n<=10) throw "Minimum Number";
+if(n>=11) throw "Maximum Number";
+}
+catch(err)
+{
+m.innerHTML="Message is " +err;
+
+}
+
+}
+
+</script>
+</body>
+</html>
