@@ -1,0 +1,107 @@
+<!Doctype html>
+<html>
+<head>
+<title>  </title>
+</head>
+<body>
+<div class="container">
+
+<div class="box">
+<h1 id="head"> Login  </h1>
+<form onsubmit="return fieldEmpty()">
+<table>
+
+<tr>
+<td> <b> Email: </b> </td>
+<td> <input type="text" id="email"> </td>
+</tr>
+
+<tr>
+<td> <b> Password:  </b></td>
+<td> <input type="password" id="pass1"> </td>
+<tr>
+
+<tr>
+<td> <b> Confirm Password: </b> </td>
+<td> <input type="password" id="pass2"> </td>
+</tr>
+
+<tr> 
+<td> <a href="institute_homepage.html"><input type="submit" value="Submit" id="btn"></a> </td>
+</tr>
+
+</table>
+</form>
+
+<script>
+function fieldEmpty()
+{
+let email=document.getElementById("email").value;
+let pattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+let pass1=document.getElementById("pass1").value;
+let pass2=document.getElementById("pass2").value;
+
+if(!pattern.test(email))
+{
+alert("Invalid mail Id Please enter valid mail");
+return false;
+}
+
+if(pass1.length<8)
+{
+alert("Password must be 8 characters");
+return false;
+}
+
+if(pass1!=pass2)
+{
+alert("Password did not matched");
+return false;
+}
+alert("You are Successfully Login to our website");
+return true;
+}
+
+let div=document.getElementsByClassName("container");
+div[0].style.height="100vh";
+div[0].style.width="100%";
+div[0].style.backgroundImage = "url('https://cdn.wallpapersafari.com/72/58/WLHYwR.jpg')";
+
+let div1=document.getElementsByClassName("box");
+div1[0].style.display="flex";
+div1[0].style.width="450px";
+div1[0].style.flexDirection="column";
+div1[0].style.justifyContent="center";
+div1[0].style.alignItems="center";
+div1[0].style.borderWidth="50px";
+div1[0].style.borderStyle="inset";
+div1[0].style.borderColor="purple";
+div1[0].style.borderRadius="50px";
+div1[0].style.padding="10px";
+div1[0].style.position="relative";
+div1[0].style.left="450px";
+div1[0].style.top="120px";
+div1[0].style.backgroundColor="beige";
+
+
+let btn=document.getElementById("btn");
+btn.style.padding="15px";
+btn.style.backgroundColor="blue";
+btn.style.color="white";
+btn.style.fontWeight="bold";
+btn.style.fontSize="15px";
+btn.style.fontStyle="italic";
+btn.style.borderRadius="10px";
+btn.style.position="relative";
+btn.style.left="120px";
+btn.style.top="10px";
+
+let head=document.getElementById("head");
+head.style.color="red";
+
+</script>
+</div>
+</div>
+
+</body>
+</html>
