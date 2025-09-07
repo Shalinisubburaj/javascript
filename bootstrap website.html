@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Blog Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+  /* For Scolldown over smooth transistion */
+    html {
+      scroll-behavior: smooth;
+    }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+.content {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 60px 0px;
+
+    }
+
+    .card {
+      padding: 0px;
+      border-radius: 12px;
+      width: 600px;
+      height: 300px;
+      text-align: center;
+    }
+
+    .card img,
+    .video-wrapper iframe {
+      width: 90%;
+      height: 250px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 20px 0 15px;
+      color: #7e3d9c;
+      font-weight: 700;
+    }
+
+    .explore {
+      background-color: #7e3d9c;
+      color: white;
+      padding: 12px 28px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .explore:hover {
+      background-color: #9b59b6;
+    }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<div class="container">
+  <header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <a class="link-secondary" href="#" onclick="showalert()">Subscribe</a>
+      </div>
+<script>
+function showalert()
+{
+alert("Successfully subscribed");
+}
+</script>
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-dark" href="#">Swivtrek</a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="link-secondary" href="#" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+        </a>
+        <a href="Signup validation.html">Sign up</a>
+        <a href="Login validation.html">Login</a>
+
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+      <a class="p-2 link-secondary" href="#home">Home</a>
+      <a class="p-2 link-secondary" href="#about">AboutUs</a>
+      <a class="p-2 link-secondary" href="#course">Courses</a>
+      <a class="p-2 link-secondary" href="#contact">ContactUs</a>
+    </nav>
+  </div>
+</div>
+
+<main class="container" id="home">
+  <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">Your Career Start with Swivel IT & Training Institute</h1>
+      <p class="lead my-3">Swivel IT & Training Institute invites ambitious college and school students to ignite a brilliant career
+          path.</p>
+      <p class="lead mb-0"><a href="#" class="text-white fw-bold">Apply Now</a></p>
+    </div>
+  </div>
+
+<div class="content" id="course">
+    <div class="card">
+      <div class="video-wrapper">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS4E-1dGYNE7u3A_2mPeMDS52kwv9_n8U1jw&s">
+      </div>
+      <h3 style="color: #7e3d9c;font-weight: bolder; ">VIDEO COURSES</h3>
+      <a href="./videomain.html"><button class="explore">EXPLORE</button></a>
+    </div>
+
+    <div class="card" id="explore">
+      <img src="https://itechindia.co/wp-content/uploads/2021/11/student-attendance-tracker.jpeg" alt="Live Courses">
+      <h3 style="color: #7e3d9c;font-weight: bolder; ">LIVE COURSES</h3>
+      <a href="./freelancing1.html"><button class="explore">EXPLORE</button></a>
+    </div>
+  </div>
+
+  <br><br>
+
+  <div class="row g-5">
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">
+        From the Firehose
+      </h3>
+
+      <article class="blog-post">
+        <h2 class="blog-post-title">Sample blog post</h2>
+        <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+
+        <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
+        <hr>
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <h2>Blockquotes</h2>
+        <p>This is an example blockquote in action:</p>
+        <blockquote class="blockquote">
+          <p>Quoted text goes here.</p>
+        </blockquote>
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <h3>Example lists</h3>
+        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
+        <ul>
+          <li>First list item</li>
+          <li>Second list item with a longer description</li>
+          <li>Third list item to close it out</li>
+        </ul>
+        <p>And this is an ordered list:</p>
+        <ol>
+          <li>First list item</li>
+          <li>Second list item with a longer description</li>
+          <li>Third list item to close it out</li>
+        </ol>
+        <p>And this is a definiton list:</p>
+        <dl>
+          <dt>HyperText Markup Language (HTML)</dt>
+          <dd>The language used to describe and define the content of a Web page</dd>
+          <dt>Cascading Style Sheets (CSS)</dt>
+          <dd>Used to describe the appearance of Web content</dd>
+          <dt>JavaScript (JS)</dt>
+          <dd>The programming language used to build advanced Web sites and applications</dd>
+        </dl>
+        <h2>Inline HTML elements</h2>
+        <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+        <ul>
+          <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
+          <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
+          <li>Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
+          <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+          <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+          <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+        </ul>
+        <p>Most of these elements are styled by browsers with few modifications on our part.</p>
+        <h2>Heading</h2>
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <h3>Sub-heading</h3>
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <pre><code>Example code block</code></pre>
+        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+      </article>
+
+      <article class="blog-post">
+        <h2 class="blog-post-title">Another blog post</h2>
+        <p class="blog-post-meta">December 23, 2020 by <a href="#">Jacob</a></p>
+
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <blockquote>
+          <p>Longer quote goes here, maybe with some <strong>emphasized text</strong> in the middle of it.</p>
+        </blockquote>
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <h3>Example table</h3>
+        <p>And don't forget about tables in these posts:</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Upvotes</th>
+              <th>Downvotes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Alice</td>
+              <td>10</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>Bob</td>
+              <td>4</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Charlie</td>
+              <td>7</td>
+              <td>9</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Totals</td>
+              <td>21</td>
+              <td>23</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+      </article>
+
+      <article class="blog-post">
+        <h2 class="blog-post-title">New feature</h2>
+        <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
+
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <ul>
+          <li>First list item</li>
+          <li>Second list item with a longer description</li>
+          <li>Third list item to close it out</li>
+        </ul>
+        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+      </article>
+
+      <nav class="blog-pagination" aria-label="Pagination">
+        <a class="btn btn-outline-primary" href="#">Older</a>
+        <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+      </nav>
+
+    </div>
+
+    <div class="col-md-4">
+      <div class="position-sticky" style="top: 2rem;">
+        <div class="p-4 mb-3 bg-light rounded">
+          <h4 class="fst-italic" id="about">About</h4>
+          <p class="mb-0"><strong>Swivel IT & Training Institute</strong> – Building Careers, Empowering People.<br><br>
+          We help people turn skills into opportunities. Our IT and non-IT training programs are designed to get you
+          job-ready, with dedicated placement support and guidance to start earning through freelancing. Whether you’re
+          a student, job seeker, homemaker, or working professional, we help you move forward with confidence.</p>
+        </div>
+
+        <div class="p-4">
+          <h4 class="fst-italic">Archives</h4>
+          <ol class="list-unstyled mb-0">
+            <li><a href="#">March 2021</a></li>
+            <li><a href="#">February 2021</a></li>
+            <li><a href="#">January 2021</a></li>
+            <li><a href="#">December 2020</a></li>
+            <li><a href="#">November 2020</a></li>
+            <li><a href="#">October 2020</a></li>
+            <li><a href="#">September 2020</a></li>
+            <li><a href="#">August 2020</a></li>
+            <li><a href="#">July 2020</a></li>
+            <li><a href="#">June 2020</a></li>
+            <li><a href="#">May 2020</a></li>
+            <li><a href="#">April 2020</a></li>
+          </ol>
+        </div>
+
+        <div class="p-4">
+          <h4 class="fst-italic">Elsewhere</h4>
+          <ol class="list-unstyled">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer style="background-color: #4B0082;; color: white; padding: 60px 40px; font-family: 'Outfit', sans-serif;">
+    <div
+      style="max-width: 1400px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+
+      <div style="flex: 1; min-width: 300px;">
+        <h2 style="font-size: 30px; font-weight: 800; margin-bottom: 20px;">Let’s Talk</h2>
+        <p style="font-size: 16px; line-height: 1.7; max-width: 500px;">
+          Every project starts with a chat. Joven leads our client conversations and will be happy to discuss your
+          project.
+          He will also pull in the right people from the team when needed.
+        </p>
+        <br />
+        <a href="#"
+          style="background-color: #28a745; padding: 12px 24px; color: #fff; text-decoration: none; font-weight: bold; border-radius: 6px; display: inline-block;">
+          Tell us about your project
+        </a>
+      </div>
+
+      <div style=" min-width: 100px;" id="contact">
+        <div style="display: flex; flex-direction: column; gap: 15px; font-size: 16px;">
+          <div style="display: flex; align-items: center;">
+            <i class="fas fa-envelope" style="color: #3fa0ff; margin-right: 10px;"></i>
+            <span><a href="mailto:admin@swivel.co.in"
+                style="color: beige; text-decoration: none;"><b>Email:</b>admin@swivel.co.in</a></span>
+          </div>
+          <div style="display: flex; align-items: center;">
+            <i class="fas fa-phone" style="color: #3fa0ff; margin-right: 10px;"></i>
+            <span><a href="tel:+918300504230" style=" color: beige; text-decoration: none;"><b>Phone:</b> 91-8300504230</a></span>
+          </div>
+          <div style="display: flex; align-items: flex-start; gap: 10px; line-height: 1.6; max-width: 400px;">
+            <i class="fas fa-map-marker-alt" style="color: #3fa0ff; margin-top: 4px;"></i>
+            <span>
+              <a href="https://g.co/kgs/X4Nid87" target="_blank" style="color: beige; text-decoration: none;">
+              <b>  Address: </b>Mahatma Gandhi Nagar Rd, near Annai Therasa English School,
+                        MRR Nagar, Palani Chettipatti,<br>
+                        Theni, Tamil Nadu 625531
+              </a>
+            </span>
+          </div>
+
+        </div>
+
+
+        <div style="margin-top: 30px;" class="footer_detail">
+          <a href="https://x.com/Swivel_Training" style="margin-right: 15px; color: #ccc;"><i
+              class="fab fa-twitter fa-lg"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61573324123476" style="margin-right: 15px; color: #ccc;"><i
+              class="fab fa-facebook fa-lg"></i></a>
+          <a href="https://www.instagram.com/swivel.training/?hl=en" style="margin-right: 15px; color: #ccc;"><i
+              class="fab fa-instagram fa-lg"></i></a>
+          <a href="https://www.linkedin.com/company/105973101/admin/dashboard/"
+            style="margin-right: 15px; color: #ccc;"><i class="fab fa-linkedin fa-lg"></i></a>
+          <a href="https://www.youtube.com/@Swivel-training" style="margin-right: 15px; color: #ccc;"><i
+              class="fab fa-youtube fa-lg"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="text-align: center; margin-top: 50px; font-size: 14px; color: #bbb; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
+      © 2025 Swivel Training. All rights reserved.
+    </div>
+  </footer>
+    
+  </body>
+</html>

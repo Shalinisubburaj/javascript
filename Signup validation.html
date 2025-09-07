@@ -1,0 +1,210 @@
+<!Doctype html>
+<html>
+<head>
+<title>Form validation  </title>
+</head>
+<body>
+<div class="container">
+
+<div class="box">
+<h1 id="head"> SignUp  </h1>
+<form onsubmit="return fieldEmpty()">
+<table>
+
+<tr>
+<td> <b> Name: </b> </td>
+<td><input type ="text" id="name"></td>
+</tr>
+
+<tr>
+<td> <b> Email: </b> </td>
+<td> <input type="text" id="email"> </td>
+</tr>
+
+<tr>
+<td> <b> Password:  </b></td>
+<td> <input type="password" id="pass1"> </td>
+</tr>
+
+<tr>
+<td> <b> Confirm Password: </b> </td>
+<td> <input type="password" id="pass2"> </td>
+</tr>
+
+
+<tr> 
+<td> <b> Age:  </b></td>
+<td> <input type="text" id="age"> </td> 
+</tr>
+
+<tr>
+<td > <b> Gender: </b> </td>
+<td> <input type="radio"  name="gender" value="male" > Male </td>
+<td> <input type="radio"  name="gender" value="female"> Female</td>
+</tr>
+
+<tr>
+<td> <b> Department:  </b></td>
+<td> 
+<select id="department">
+<option>  </option>
+<option> Civil </option>
+<option> CSE </option>
+<option> ECE </option>
+<option> EEE </option>
+<option> Mech  </option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td> <b> Mobile Number: </b> </td>
+<td> <input type="text" id="number"> </td>
+</tr>
+
+<tr> 
+<td> <b> State: </b> </td>
+<td> 
+<select id="state">
+<option>  </option>
+<option> Tamil Nadu </option>
+<option> Kerala </option>
+<option> Karnataka</option>
+<option> Andra pradesh</option>
+<option> Maharashtra</option>
+</select>
+</td>
+</tr>
+
+<tr> 
+<td> <b> City: </b> </td>
+<td> 
+<select id="city">
+<option>   </option>
+<option> Theni </option>
+<option> Madurai </option>
+<option> Chennai</option>
+<option> Thiruchi</option>
+<option> Dindugal</option>
+</select>
+</td>
+</tr>
+
+<tr> 
+<td> <a href="institute_Login.html"> <input type="submit" value="Submit" id="btn"> </a> </td>
+</tr>
+
+</table>
+</form>
+
+<script>
+function fieldEmpty()
+{
+let name=document.getElementById("name").value;
+let email=document.getElementById("email").value;
+let pattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+let pass1=document.getElementById("pass1").value;
+let pass2=document.getElementById("pass2").value;
+let age=document.getElementById("age").value;
+let department=document.getElementById("department").value;
+let number=document.getElementById("number").value;
+let state=document.getElementById("state").value;
+let city=document.getElementById("city").value;
+if(name=="")
+{
+alert("Name Field is Empty");
+return false;
+}
+
+if(!pattern.test(email))
+{
+alert("Invalid mail Id Please enter valid mail");
+return false;
+}
+
+if(pass1.length<8)
+{
+alert("Password must be 8 character including @,#,$,%");
+return false;
+}
+
+if(pass1!=pass2)
+{
+alert("Password did not matched");
+return false;
+}
+
+if(age=="")
+{
+alert("Age Field is Empty");
+return false;
+}
+
+if(department=="")
+{
+alert("Select Your Department");
+return false;
+}
+
+if(number.length!=10)
+{
+alert("Enter valid 10 digit Mobile Number");
+return false;
+}
+
+if(state=="")
+{
+alert("Select Your State");
+return false;
+}
+
+if(city=="")
+{
+alert("Select Your City");
+return false;
+}
+alert("You are Successfully Signup to our website");
+return true;
+}
+
+let div=document.getElementsByClassName("container");
+div[0].style.height="100vh";
+div[0].style.width="100%";
+div[0].style.backgroundImage = "url('https://static.vecteezy.com/system/resources/previews/001/971/264/non_2x/beautiful-cherry-blossom-with-bokeh-lights-background-concept-free-vector.jpg')";
+
+let div1=document.getElementsByClassName("box");
+div1[0].style.display="flex";
+div1[0].style.width="450px";
+div1[0].style.flexDirection="column";
+div1[0].style.justifyContent="center";
+div1[0].style.alignItems="center";
+div1[0].style.fontSize="20px";
+div1[0].style.borderRadius="50px";
+div1[0].style.padding="10px";
+div1[0].style.position="relative";
+div1[0].style.left="470px";
+div1[0].style.top="150px";
+
+
+let btn=document.getElementById("btn");
+btn.style.padding="15px";
+btn.style.backgroundColor="blue";
+btn.style.color="white";
+btn.style.fontWeight="bold";
+btn.style.fontSize="15px";
+btn.style.fontStyle="italic";
+btn.style.borderRadius="10px";
+btn.style.position="relative";
+btn.style.left="155px";
+btn.style.top="10px";
+
+let head=document.getElementById("head");
+head.style.color="purple";
+
+
+
+</script>
+</div>
+</div>
+</body>
+</html>
